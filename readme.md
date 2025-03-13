@@ -1,6 +1,6 @@
 # React Native Candy Game 🍬
 
-A simple match-3 style game (Candy Crush clone) built using **React Native + TypeScript**.
+A simple match-3 style game (Candy Crush-style) built using **React Native + TypeScript**.
 
 ## 🔥 Features
 
@@ -14,21 +14,11 @@ A simple match-3 style game (Candy Crush clone) built using **React Native + Typ
 - ⏳ Mini splash screen with optional text translation
 - 🍬 Bonus candies (row and column destroyers)
 
-## ✨ Coming Soon
-
-- 🔊 Sound effects  
-- 🎞 Better animations  
-- 📜 Level selector screen (already available in `LevelSelectScreen`)
-
----
-
 ## 📦 Installation
 
 ```bash
 npm install react-native-candy-game
 ```
-
----
 
 ## 📱 Basic Usage
 
@@ -48,8 +38,6 @@ import { CandyGameScreen } from 'react-native-candy-game';
 />
 ```
 
----
-
 ## 🌍 Multilingual Support
 
 All UI texts can be translated via the `translations` prop:
@@ -65,20 +53,16 @@ All UI texts can be translated via the `translations` prop:
 | `retryText`           | Retry                       |
 | `loadingLevelText`    | Loading your level…         |
 
----
-
 ## 🔁 Level Persistence
 
 - The game remembers your last level using `AsyncStorage`.
 - Automatically resumes from the saved level on app launch.
 
----
-
 ## 📂 Optional: Use Level Selector with Navigation
 
 ```tsx
 import { CandyGameScreen, LevelSelectScreen } from 'react-native-candy-game';
-import { createStackNavigator } from '@react-navigation/stack';
+import { createStackNavigator } from '@react-navigation/native-stack';
 
 const Stack = createStackNavigator();
 
@@ -88,24 +72,18 @@ const Stack = createStackNavigator();
 </Stack.Navigator>
 ```
 
----
-
 ## 💡 Bonus Candies
 
 Special candies randomly appear during the game:
 - 🍬 **Row Destroyer Candy** – clears entire row
 - 🍬 **Column Destroyer Candy** – clears entire column
 
-Customize their images in `./assets/bonus_row.png` and `bonus_col.png`.
-
----
+Customize their images in `assets/bonus_row.png` and `assets/bonus_col.png`.
 
 ## 🎥 Gameplay Preview
 
-![Candy Game Preview](./assets/candy_game_preview.gif)
-
----
+Include a `.gif` file showing gameplay if desired.
 
 ## 📫 Contributions
 
-Pull requests, suggestions and issues are very welcome!
+Pull requests, issues, and feedback are always welcome. Let's make this game better together!
