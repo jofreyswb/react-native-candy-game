@@ -1,0 +1,26 @@
+# System files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
+# macOS
+._*
+.Spotlight-V100
+.Trashes
+
+# node modules
+node_modules/
+
+# Expo / React Native cache & build
+.expo/
+.expo-shared/
+dist/
+build/
+android/
+ios/
+
+# VSCode or IDE folders
+.vscode/
+.idea/

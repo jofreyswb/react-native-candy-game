@@ -1,8 +1,8 @@
 {
     "name": "react-native-candy-game",
-    "version": "1.0.0",
-    "main": "index.ts",
-    "types": "src/CandyGameScreen.tsx",
+    "version": "1.0.1",
+    "main": "index.js",
+    "types": "index.d.ts",
     "keywords": ["react-native", "game", "candy-crush"],
     "peerDependencies": {
       "react": ">=17.0.0",
