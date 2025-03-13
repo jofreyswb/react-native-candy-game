@@ -1,4 +1,3 @@
-
 # React Native Candy Game 🍬
 
 A simple match-3 style game (Candy Crush clone) built using **React Native + TypeScript**.
@@ -17,16 +16,16 @@ A simple match-3 style game (Candy Crush clone) built using **React Native + Typ
 
 ## ✨ Coming Soon
 
-- 🔊 Sound effects
-- 🎞 Better animations
-- 📜 Level selector screen (already available in `LevelSelectScreen.tsx`)
+- 🔊 Sound effects  
+- 🎞 Better animations  
+- 📜 Level selector screen (already available in `LevelSelectScreen`)
 
 ---
 
 ## 📦 Installation
 
 ```bash
-npm install git+https://github.com/jofreyswb/react-native-candy-game.git
+npm install react-native-candy-game
 ```
 
 ---
@@ -78,8 +77,7 @@ All UI texts can be translated via the `translations` prop:
 ## 📂 Optional: Use Level Selector with Navigation
 
 ```tsx
-import LevelSelectScreen from './src/LevelSelectScreen';
-import CandyGameScreen from './src/CandyGameScreen';
+import { CandyGameScreen, LevelSelectScreen } from 'react-native-candy-game';
 import { createStackNavigator } from '@react-navigation/stack';
 
 const Stack = createStackNavigator();

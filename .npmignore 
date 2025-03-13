@@ -1,0 +1,10 @@
+.git/
+node_modules/
+*.zip
+*.DS_Store
+__tests__/
+*.test.ts
+*.test.tsx
+src/
+tsconfig.json
+tsconfig.build.json

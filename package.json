@@ -1,12 +1,36 @@
 {
     "name": "react-native-candy-game",
     "version": "1.0.1",
-    "main": "index.ts",
-    "types": "index.ts",
-    "keywords": ["react-native", "game", "candy-crush"],
+    "description": "A Match-3 Candy Game component for React Native (Candy Crush-style)",
+    "main": "build/index.js",
+    "types": "build/index.d.ts",
+    "files": [
+      "build",
+      "assets",
+      "index.ts"
+    ],
+    "keywords": [
+      "react-native",
+      "game",
+      "candy-crush",
+      "match-3"
+    ],
     "peerDependencies": {
       "react": ">=17.0.0",
-      "react-native": ">=0.70.0"
-    }
+      "react-native": ">=0.70.0",
+      "@react-native-async-storage/async-storage": ">=1.0.0",
+      "@react-navigation/native": ">=6.0.0",
+      "@react-navigation/native-stack": ">=6.0.0"
+    },
+    "devDependencies": {
+      "typescript": "^5.8.2",
+      "@types/react": "^18.0.0",
+      "@types/react-native": "^0.72.0"
+    },
+    "scripts": {
+      "build": "tsc -p tsconfig.build.json"
+    },
+    "author": "Sergej Jacysen",
+    "license": "MIT"
   }
   

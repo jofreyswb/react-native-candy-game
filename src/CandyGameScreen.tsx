@@ -111,7 +111,7 @@ export default function CandyGameScreen({
     if (loading) return;
     generateGrid();
     const interval = setInterval(() => {
-      setTimeLeft((prev) => {
+      setTimeLeft((prev: number) => {
         if (prev <= 1) {
           clearInterval(interval);
           if (score >= currentLevel.targetScore) {
@@ -231,7 +231,7 @@ export default function CandyGameScreen({
       animateDisappear(idx);
     }
     setGrid(newGrid);
-    setScore((prev) => prev + 100);
+    setScore((prev: number) => prev + 100);
     setTimeout(() => refillGrid(newGrid), 400);
   };
 
@@ -244,7 +244,7 @@ export default function CandyGameScreen({
       animateDisappear(idx);
     }
     setGrid(newGrid);
-    setScore((prev) => prev + 100);
+    setScore((prev: number) => prev + 100);
     setTimeout(() => refillGrid(newGrid), 400);
   };
 
@@ -260,7 +260,7 @@ export default function CandyGameScreen({
           animateDisappear(i);
           animateDisappear(i + 1);
           animateDisappear(i + 2);
-          setScore((prev) => prev + 30);
+          setScore((prev: number) => prev + 30);
         }
       }
     }
@@ -273,7 +273,7 @@ export default function CandyGameScreen({
           animateDisappear(i);
           animateDisappear(i + GRID_SIZE);
           animateDisappear(i + GRID_SIZE * 2);
-          setScore((prev) => prev + 30);
+          setScore((prev: number) => prev + 30);
         }
       }
     }
@@ -342,6 +342,16 @@ export default function CandyGameScreen({
 }
 
 const styles = StyleSheet.create({
+  loadingContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  loadingText: {
+    marginTop: 10,
+    fontSize: 16,
+    color: '#555',
+  },
   container: {
     flex: 1,
     paddingTop: 50,
