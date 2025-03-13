@@ -1,8 +1,8 @@
 {
     "name": "react-native-candy-game",
     "version": "1.0.1",
-    "main": "index.js",
-    "types": "index.d.ts",
+    "main": "index.ts",
+    "types": "index.ts",
     "keywords": ["react-native", "game", "candy-crush"],
     "peerDependencies": {
       "react": ">=17.0.0",
