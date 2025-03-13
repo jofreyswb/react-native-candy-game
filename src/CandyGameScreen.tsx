@@ -20,13 +20,13 @@ const GRID_SIZE = 8;
 const CANDY_SIZE = width / GRID_SIZE;
 
 const candyImages = [
-  require('./assets/candy1.png'),
-  require('./assets/candy2.png'),
-  require('./assets/candy3.png'),
-  require('./assets/candy4.png'),
-  require('./assets/candy5.png'),
-  require('./assets/bonus_row.png'),
-  require('./assets/bonus_col.png'),
+  require('../assets/candy1.png'),
+  require('../assets/candy2.png'),
+  require('../assets/candy3.png'),
+  require('../assets/candy4.png'),
+  require('../assets/candy5.png'),
+  require('../assets/bonus_row.png'),
+  require('../assets/bonus_col.png'),
 ];
 
 const BONUS_ROW_INDEX = candyImages.length - 2;
