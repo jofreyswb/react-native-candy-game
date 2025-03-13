@@ -1,6 +1,6 @@
 {
     "name": "react-native-candy-game",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "A Match-3 Candy Game component for React Native (Candy Crush-style)",
     "main": "build/index.js",
     "types": "build/index.d.ts",
